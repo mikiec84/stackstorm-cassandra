@@ -24,6 +24,7 @@ def wait_net_service(server, port, sleep=10, timeout=5):
             s.close()
             return True
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Port open checker.')
     parser.add_argument('--server', '--h', required=True,

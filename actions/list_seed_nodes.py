@@ -37,6 +37,7 @@ def list_seed_nodes(config_file):
         sys.stderr.write(msg)
         raise Exception(msg)
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cassandra config parser.')
     parser.add_argument('--config_file', '-f', required=True,
