@@ -18,7 +18,7 @@ def wait_net_service(server, port, sleep=10, timeout=5):
         try:
             s.settimeout(timeout)
             s.connect((server, port))
-        except:
+        except Exception:
             time.sleep(sleep)
         else:
             s.close()
