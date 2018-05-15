@@ -18,11 +18,12 @@ def wait_net_service(server, port, sleep=10, timeout=5):
         try:
             s.settimeout(timeout)
             s.connect((server, port))
-        except:
+        except Exception:
             time.sleep(sleep)
         else:
             s.close()
             return True
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Port open checker.')
